@@ -23,3 +23,7 @@ class PrimeListTest(unittest.TestCase):
         numbers = [0, 1]
         is_prime = is_prime_list(numbers)
         self.assertFalse(is_prime)
+    def test_give_negative_numbers_is_not_prime(self):
+        numbers = [-3, -2, -1]
+        is_prime = is_prime_list(numbers)
+        self.assertFalse(is_prime)
