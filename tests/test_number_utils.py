@@ -15,3 +15,7 @@ class PrimeListTest(unittest.TestCase):
         numbers = [7, 8, 9]
         is_prime = is_prime_list(numbers)
         self.assertFalse(is_prime)
+    def test_give_11_12_13_14_15_is_not_prime(self):
+        numbers = [11, 12, 13, 14, 15]
+        is_prime = is_prime_list(numbers)
+        self.assertFalse(is_prime)
