@@ -1,0 +1,35 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'alternatingCharacters' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts STRING s as parameter.
+#
+
+def alternatingCharacters(s):
+    # Write your code here
+    count = 0
+    stack = [s[0]]
+    for i in range(1,len(s)):
+        if s[i] != stack[-1]:
+            stack.append(s[i])
+        else:
+            count +=1
+    return count 
+        
+# if __name__ == '__main__':
+
+#     q = int(input().strip())
+
+#     for q_itr in range(q):
+#         s = input()
+#         result = alternatingCharacters(s)
+#         print(result)
+
