@@ -11,9 +11,3 @@ def caesarCipher(s, k):
             encypt += s[i]
     return encypt
 
-
-if __name__ == '__main__':
-    s = input()
-    k = int(input().strip())
-    result = caesarCipher(s, k)
-    print(result)
